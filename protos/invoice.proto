@@ -1,0 +1,17 @@
+syntax = "proto3";
+package invoicing;
+
+service Invoicing {
+    rpc MailInvoice(InvoiceDetails) returns (Message) {}
+}
+
+message InvoiceDetails{
+    string id = 1;
+    string name = 2;
+    string email = 3;
+    string amount = 4;
+}
+
+message Message {
+    string status = 1;
+}
