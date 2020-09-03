@@ -7,10 +7,10 @@ var client = new grpcConfig.invoicing.Invoicing('localhost:50051',
 
 var invoice_details = {
     id: '1123',
-    name : 'John Doe',
-    email : 'sahilthakkar64@gmail.com',
+    name : 'Saugata Pal',
+    email : 'cto@solarcloud.com.au',
     amount : '$2500'
 }
 client.mailInvoice(invoice_details,(err,message)=>{
-    console.log(`Mail Invoice queuing status : ${message.status}`)
+    console.log(`Mail invoice queuing status : ${message.status}`)
 })

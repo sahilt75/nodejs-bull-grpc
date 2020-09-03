@@ -1,7 +1,6 @@
-var consumer = require('./consumer')
 var grpcConfig = require('./grpc_config')
 var grpc = require('grpc')
-
+var consumer = require('./consumer')
 
 function queueMailInvoice(invoice_details){
     const data = {
