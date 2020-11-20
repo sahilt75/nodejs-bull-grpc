@@ -23,7 +23,7 @@ sendMailQueue.process(async job => {
 function sendMail(email) {
     return new Promise((resolve, reject) => {
         let mailOptions = {
-        from: 'sahilthakkar64@gmail.com',
+        from: 'test1234@gmail.com',
         to: email,
         subject: 'Your invoice from SolarCloud',
         text: "This email is from SolarCloud.",
@@ -36,8 +36,8 @@ function sendMail(email) {
         let mailConfig = {
         service: 'gmail',
         auth: {
-            user: 'sahilthakkar64@gmail.com',
-            pass: 'stscorsese1111....'
+            user: 'test1234@gmail.com',
+            pass: 'test1234'
         },
         };
         nodemailer.createTransport(mailConfig).sendMail(mailOptions, (err, info) => {
